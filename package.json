@@ -1,0 +1,25 @@
+{
+  "name": "post-graphics-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Code-based social post graphics: one template tree, HTML+Playwright (source of truth) or Satori+resvg.",
+  "packageManager": "pnpm@10.34.6",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "render": "node src/cli.mjs",
+    "examples": "node scripts/examples.mjs",
+    "browser:install": "playwright install chromium",
+    "fonts": "python3 scripts/build-fonts.py"
+  },
+  "dependencies": {
+    "@mermaid-js/layout-elk": "1.0.1",
+    "@resvg/resvg-js": "2.6.2",
+    "mermaid": "12.2.0",
+    "opentype.js": "2.0.0",
+    "playwright": "1.64.1",
+    "satori": "0.63.2"
+  }
+}
