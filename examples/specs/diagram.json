@@ -1,0 +1,19 @@
+{
+  "placeholder": true,
+  "style": "kitten",
+  "eyebrow": "example-package-resolution",
+  "title": "Where the resolver finds native modules",
+  "nodes": [
+    { "id": "root", "label": "node_modules/", "kind": "header", "x": 0, "y": 0 },
+    { "id": "a", "label": "example-lib", "x": 1, "y": 1 },
+    { "id": "b", "label": "example-audio", "x": 1, "y": 2 },
+    { "id": "mine", "label": "my-local-package", "kind": "local", "x": 1, "y": 3 },
+    { "id": "dup", "label": "example-audio", "kind": "conflict", "x": 2, "y": 4, "badge": "DUPLICATE" }
+  ],
+  "edges": [
+    { "from": "root", "to": "a" }, { "from": "root", "to": "b" }, { "from": "root", "to": "mine" },
+    { "from": "mine", "to": "dup" },
+    { "from": "dup", "to": "b", "type": "curve", "label": "conflict" }
+  ],
+  "caption": "Placeholder example: illustrative structure only."
+}

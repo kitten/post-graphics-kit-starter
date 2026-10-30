@@ -1,0 +1,4 @@
+{ "placeholder": true, "style": "expo", "title": ["Example task,", "made faster."], "pill": "EXAMPLE v1.0", "taskLabel": "Task", "task": "example-cli build",
+  "bars": [ { "label": "Before", "value": "40.0s", "amount": 40.0, "tone": "before" }, { "label": "After", "value": "20.0s", "amount": 20.0, "tone": "after" } ],
+  "stats": [ { "label": "Speedup", "value": "2.0×" }, { "label": "Reduction", "value": "−50%" }, { "label": "Time saved", "value": "20.0s" } ],
+  "source": "Placeholder numbers for layout testing only." }
